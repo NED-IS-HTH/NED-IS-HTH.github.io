@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Global Stock Directory & Screener - Tickerboard</title>
+  <meta name="description" content="Browse international stock listings by region, search company ticker symbols, and monitor market capitalization data.">
+  <meta name="keywords" content="stock directory, search stocks, international equities, market cap, share volume">
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Global Stock Directory</h1>
+      <p>Filter international equities across US, Indian, European, and Asian markets.</p>
+    </header>
+
+    <nav role="navigation">
+      <a href="index.html" title="View global stock indices and overview">Markets Overview</a>
+      <a href="stocks.html" class="active" title="Search full global stock directory">Stock Directory</a>
+      <a href="live-data.html" title="Configure live market API settings">Live API Sync</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Search & Filter Stocks</h2>
+        <div class="controls">
+          <input id="q" type="text" placeholder="Search by symbol or name..." aria-label="Search stock symbol">
+          <select id="reg" aria-label="Filter stocks by region">
+            <option value="All">All Regions</option>
+            <option value="US">US</option>
+            <option value="India">India</option>
+            <option value="Europe">Europe</option>
+            <option value="Asia">Asia</option>
+          </select>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Star</th>
+              <th>Symbol</th>
+              <th>Company Name</th>
+              <th>Region</th>
+              <th>Price ($)</th>
+              <th>Change (%)</th>
+            </tr>
+          </thead>
+          <tbody id="stocks-body"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Tickerboard Analytics. <a href="index.html" title="Return to home page">Back to Overview</a>.</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

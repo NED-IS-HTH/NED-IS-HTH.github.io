@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Technique 1: Keyword-Rich Title Tag -->
+  <title>Tickerboard - Global Stock Market Indices & Daily Overview</title>
+  
+  <!-- SEO Technique 2: Targeted Meta Description -->
+  <meta name="description" content="Free global stock market tracker. View live stock market indices, top market movers, and major indices across US, India, Europe, and Asia.">
+  
+  <!-- SEO Technique 3: Meta Keywords Tag -->
+  <meta name="keywords" content="stock market, global indices, S&P 500, Nifty 50, market overview, stock tracker">
+  
+  <!-- SEO Technique 4: Meta Robots Indexing Directive -->
+  <meta name="robots" content="index, follow">
+  
+  <!-- SEO Technique 5: Meta Author & Geo Tags -->
+  <meta name="author" content="Tickerboard Analytics">
+  <meta name="geo.region" content="IN-MH">
+  <meta name="geo.placename" content="Nagpur">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- SEO Technique 6: Heading Hierarchy (H1) -->
+      <h1>Tickerboard Market Overview</h1>
+      <p>Simple global stock tracker for monitoring indices and daily market updates.</p>
+    </header>
+
+    <!-- Semantic Navigation with Link Titles -->
+    <nav role="navigation">
+      <a href="index.html" class="active" title="View global stock indices and overview">Markets Overview</a>
+      <a href="stocks.html" title="Search full global stock directory">Stock Directory</a>
+      <a href="live-data.html" title="Configure live market API settings">Live API Sync</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>World Stock Market Indices</h2>
+        <div id="indices-list" class="flex-grid"></div>
+      </section>
+
+      <section>
+        <h2>Top Market Movers Today</h2>
+        <div id="movers-list" class="flex-grid"></div>
+      </section>
+
+      <section>
+        <h2>My Saved Watchlist</h2>
+        <div id="watchlist" class="flex-grid"></div>
+        <br>
+        <button id="clr">Clear Watchlist</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Tickerboard Analytics. <a href="live-data.html" title="Learn about API data settings">API Setup Page</a>.</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

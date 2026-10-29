@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Live Market Data API Setup - Tickerboard</title>
+  <meta name="description" content="Connect a free Alpha Vantage API key to sync live stock quotes directly to your local web browser session.">
+  <meta name="keywords" content="stock API setup, Alpha Vantage key, real-time market data">
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Live API Data Configuration</h1>
+      <p>Configure direct browser-based real-time market data fetching.</p>
+    </header>
+
+    <nav role="navigation">
+      <a href="index.html" title="View global stock indices and overview">Markets Overview</a>
+      <a href="stocks.html" title="Search full global stock directory">Stock Directory</a>
+      <a href="live-data.html" class="active" title="Configure live market API settings">Live API Sync</a>
+    </nav>
+
+    <main>
+      <section class="card">
+        <h2>Setup Instructions</h2>
+        <ol>
+          <li>Get a free key from <a href="https://www.alphavantage.co" target="_blank" rel="noopener" title="Visit Alpha Vantage API Provider">AlphaVantage.co</a>.</li>
+          <li>Enter your key below to save it in browser local storage:</li>
+        </ol>
+        <div class="controls">
+          <input id="kin" type="password" placeholder="Paste API Key Here" aria-label="API Key Input">
+          <button id="sk">Save Key</button>
+          <button id="dk">Remove Key</button>
+        </div>
+        <p id="api-status"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Tickerboard Analytics.</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
